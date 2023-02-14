@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    direction: top;
+}
+
+/* Body */
+body{
+font-family: 'Roboto', sans-serif;
+width: 100vw;
+overflow-x: hidden;
+scroll-behavior: smooth;
+}
+
+/* #Ids */
+#homeImg{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+#homeContent{
+    width: 25vw;
+    margin: auto;
+}
+
+#comma{
+    color: #272caa;
+}
+
+#scrollbar{
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+}
+
+#thanks{
+    text-align: center;
+}
+/* Classes */
+
+.fullWidthHeight{
+    width: 100vw;
+    height: 100vh;
+}
+
+.gridHalf{
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 1fr 1fr;
+}
+
+.flexCentre{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.flexSide{
+    display: flex;
+}
+
+.fields{
+    width: 70vw;
+    margin: auto;
+
+}
+
+.inputContainer{
+    width: 80vw;
+}
+.srno{
+    color: #272caa;
+    margin-right: 10px;
+}
+
+.margin{
+    margin-bottom:20px;
+}
+
+.subText{
+    color: gray;
+}
+
+.btn{
+    color: white;
+    background-color: #272caa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.enter{
+    color: #272caa;
+    align-self: center;
+}
+
+.icon{
+    display: inline;
+    padding: 8px;
+    color: white;
+    background-color: #272caa;
+    margin: 8px;
+    border-radius: 5px;
+}
+
+/* Selectors */
+
+ input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #272caa;
+    color: #272caa;
+    height: 4rem;
+}
+
+.box{
+    width: 20%;
+    opacity: .5;
+    margin: 20px;
+    border: 2px solid #272caa;
+    border-radius: 10px;
+    background-color: rgb(39, 44, 170, 30%);
+    color: black;
+}
+
+input[type="checkbox"]{
+    height: 2rem;
+}
+
+
+
+#homeContent h2{
+font-size: 1.5rem;   
+}
+
+input::placeholder{
+    font-size: 2rem;
+    color: #272caa;
+    opacity: .5;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 500px) {
+    
+}
+
+@media (max-width: 750px) {
+    .gridHalf{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vh;
+    }
+
+    #home{
+        margin: 0;
+    }
+
+    #homeContent{
+        width: 100vw;
+        text-align: center;
+    }
+    #homeImg{
+        height: 50vh;
+    }
+}
